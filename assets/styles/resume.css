@@ -1,0 +1,190 @@
+:root {
+    --main-color: #080c0e;
+    --secondary-color: #090d0f;
+    --highlight-color: #356372;
+    --text-color: white;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    background-image: url('../imgs/desk3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--main-color);
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+}
+
+section {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 32px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: var(--highlight-color);
+    margin-top: 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+h2:hover::after {
+    width: 60px;
+    transition: width 0.3s ease-in-out;
+}
+
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+.experiences article {
+    margin-bottom: 30px;
+}
+
+.experiences article h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.experiences article p {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+
+.experiences article ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.experiences article ul.expanded {
+    max-height: 500px;
+    padding-top: 10px;
+}
+
+
+.skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.skill-icon img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.skill-name {
+    font-weight: bold;
+    min-width: 120px;
+    margin-right: 20px;
+}
+
+.progress-bar {
+    width: calc(100% - 150px);
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--highlight-color);
+    transition: width 0.3s ease;
+}
+
+.percent {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 12px;
+}
+
+.skills li,
+.languages li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.skills span,
+.languages span {
+    font-weight: bold;
+    display: inline-block;
+    min-width: 150px;
+}
+
+.personal-statement{
+    margin-left: -19px;
+}

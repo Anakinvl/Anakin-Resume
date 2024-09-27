@@ -1,0 +1,13 @@
+[
+    {
+      "title": "D&D app",
+      "images": ["../assets/imgs/desk.jpg", "../assets/imgs/desk2.jpg", "../assets/imgs/desk.jpg"],
+      "description": "Your companion app for Dungeons & Dragons."
+    },
+    {
+      "title": "Ghost hunting app",
+      "images": ["../assets/imgs/desk.jpg", "../assets/imgs/desk2.jpg", "../assets/imgs/desk.jpg"],
+      "description": "The ultimate ghost-catching tool!"
+    }
+  ]
+  
