@@ -1,7 +1,8 @@
 :root {
     --main-color:#080c0e;
     --secondary-color: #090d0f;
-    --highlight-color: #356372;
+    --highlight-color: #70ceee;
+    --hover-color: #5aa5be;
 }
 
 body, html {
@@ -23,6 +24,16 @@ main {
     position: relative;
     z-index: 1;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+a {
+    color: var(--hover-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--highlight-color);
+    text-decoration: underline;
 }
 
 .home-body {

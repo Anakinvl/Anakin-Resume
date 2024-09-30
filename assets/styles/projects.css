@@ -1,7 +1,8 @@
 :root {
     --main-color: #080c0e;
     --secondary-color: #090d0f;
-    --highlight-color: #356372;
+    --highlight-color: #5aa5be;
+    --hover-color: #5aa5be;
 }
 
 body, html {
@@ -10,7 +11,7 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: var(--secondary-color);
-    color: white;
+    color: rgb(124, 27, 27);
 }
 
 .projects-body {
@@ -39,7 +40,7 @@ main {
 }
 
 .project-card {
-    background-color: #ffffff;
+    background-color: var(--highlight-color);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     overflow: hidden;
@@ -62,7 +63,7 @@ main {
 }
 
 .project-card .project-info {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: var(--main-color);
     backdrop-filter: blur(10px);
     padding: 20px;
     border-bottom-left-radius: 15px;
@@ -74,17 +75,6 @@ main {
     font-size: 24px;
     margin-bottom: 10px;
     line-height: 1.2;
-}
-
-.show-more {
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
-}
-
-.show-more:hover {
-    transform: scale(1.05);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes fadeIn {

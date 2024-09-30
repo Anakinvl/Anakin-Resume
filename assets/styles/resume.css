@@ -1,7 +1,7 @@
 :root {
     --main-color: #080c0e;
     --secondary-color: #090d0f;
-    --highlight-color: #356372;
+    --highlight-color: #5aa5be;
     --text-color: white;
 }
 
@@ -135,11 +135,11 @@ li {
     align-items: center;
 }
 
-.skill-icon img {
-    width: 20px;
-    height: 20px;
+/* .skill-icon img {
+    width: 60px;
+    height: 60px;
     margin-right: 10px;
-}
+} */
 
 .skill-name {
     font-weight: bold;
@@ -183,6 +183,36 @@ li {
     font-weight: bold;
     display: inline-block;
     min-width: 150px;
+}
+.hobbies-interests ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    width: 400px;
+}
+
+.hobbies-interests li {
+    text-align: center;
+}
+
+.skill-icon {
+    display: block;
+    margin: 0 auto 10px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-icon img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
 }
 
 .personal-statement{

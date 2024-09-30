@@ -1,4 +1,11 @@
-/* header.css */
+
+:root {
+    --main-color:#080c0e;
+    --secondary-color: #090d0f;
+    --highlight-color: #70ceee;
+    --hover-color: #5aa5be;
+}
+
 header {
     background-color: var(--main-color);
     color: white;
@@ -32,8 +39,10 @@ nav a {
     text-decoration: none;
 }
 
-
 nav a.active {
-    color: #FF5733;
-    font-weight: bold;
+    color: var(--highlight-color);
+}
+
+nav a:hover {
+    color: var(--hover-color);
 }
