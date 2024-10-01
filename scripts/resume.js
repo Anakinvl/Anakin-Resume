@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
             content.classList.toggle('expanded');
         });
         
-        // Initially collapse all experiences
         content.classList.remove('expanded');
     });
 });
