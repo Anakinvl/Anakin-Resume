@@ -12,6 +12,8 @@ body, html {
     padding: 0;
     background-color: var(--secondary-color);
     color: white;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 main {
@@ -123,19 +125,19 @@ a:hover {
 
 .firstname{
     font-size: 36px;
-    margin-bottom: 0px;
 }
 
 .lastname {
     font-size: 48px;
     margin-top: 0;
-    margin-bottom: 5px;
 }
 
 .firstname,
 .lastname {
     font-family: 'Arial', sans-serif;
     letter-spacing: 1px;
+    margin-bottom: -20px;
+
 }
 
 .firstname:hover::after,

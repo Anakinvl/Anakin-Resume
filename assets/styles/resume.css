@@ -36,12 +36,16 @@ header {
 
 .resume-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 20px;
-    height: calc(100vh - 150px);
-    overflow-y: auto;
 }
+
+@media (min-width: 768px) {
+    .resume-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 
 section {
     padding: 20px;
@@ -55,9 +59,9 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.75rem;
     font-weight: normal;
-    margin-bottom: 32px;
+    margin-bottom: 15px;
     position: relative;
     text-transform: uppercase;
 }
@@ -87,6 +91,26 @@ h4 {
     font-size: 16px;
     margin-bottom: 10px;
 }
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
 
 ul {
     list-style-type: none;
@@ -184,13 +208,32 @@ li {
     display: inline-block;
     min-width: 150px;
 }
+
+.education-container {
+    display: flex;
+    gap: 20px
+}
+
+.education-item {
+    flex: 1;
+    min-width: 200px;
+}
+
+.hobbies-interests{
+    margin-top: -16px;
+}
+
+.hobbies-interests .what-can-i-do ul li {
+    text-align: left;
+}
+
 .hobbies-interests ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     list-style: none;
     padding: 0;
-    width: 400px;
+    width: 420px;
 }
 
 .hobbies-interests li {

@@ -57,7 +57,7 @@ main {
 
 .project-card img {
     width: 100%;
-    height: auto;
+    height: 350px;
     object-fit: cover;
     filter: brightness(90%) saturate(110%);
 }
