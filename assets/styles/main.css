@@ -1,5 +1,5 @@
 :root {
-    --main-color:#080c0e;
+    --main-color: #080c0e;
     --secondary-color: #090d0f;
     --highlight-color: #70ceee;
     --hover-color: #5aa5be;
@@ -50,7 +50,7 @@ a:hover {
 .home-content {
     display: flex;
     align-items: center;
-    width: 1700px;
+    width: 100%;
     margin-top: -300px;
     margin-left: -325px;
 }
@@ -94,7 +94,7 @@ a:hover {
     text-decoration: none;
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
-    width: 500px;
+    width: 100%;
 }
 
 .nav_btns .button:hover {
@@ -123,7 +123,7 @@ a:hover {
     transition: width 0.3s ease-in-out;
 }
 
-.firstname{
+.firstname {
     font-size: 36px;
 }
 
@@ -137,7 +137,6 @@ a:hover {
     font-family: 'Arial', sans-serif;
     letter-spacing: 1px;
     margin-bottom: -20px;
-
 }
 
 .firstname:hover::after,
@@ -167,4 +166,68 @@ section {
     border-radius: 5px;
     padding: 1rem;
     margin-bottom: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .home-content {
+        flex-direction: column;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .home-content div,
+    .text-content {
+        flex: 1 1 100%;
+        margin: 0;
+    }
+
+    .nav_btns .button {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    body, html {
+        font-size: 16px;
+    }
+
+    .titleAbout {
+        font-size: 36px;
+    }
+
+    .firstname {
+        font-size: 28px;
+    }
+
+    .lastname {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    body, html {
+        font-size: 14px;
+    }
+
+    .titleAbout {
+        font-size: 24px;
+    }
+
+    .firstname {
+        font-size: 20px;
+    }
+
+    .lastname {
+        font-size: 24px;
+    }
+
+    .nav_btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_btns .button {
+        width: 100%;
+    }
 }

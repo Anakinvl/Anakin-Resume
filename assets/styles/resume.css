@@ -46,7 +46,6 @@ header {
     }
 }
 
-
 section {
     padding: 20px;
     border-radius: 5px;
@@ -81,7 +80,6 @@ h2:hover::after {
     transition: width 0.3s ease-in-out;
 }
 
-
 h3 {
     font-size: 18px;
     margin-bottom: 15px;
@@ -111,7 +109,6 @@ p {
     margin-bottom: 10px;
 }
 
-
 ul {
     list-style-type: none;
     padding-left: 0;
@@ -120,6 +117,7 @@ ul {
 li {
     margin-bottom: 10px;
 }
+
 .experiences article {
     margin-bottom: 30px;
 }
@@ -135,7 +133,6 @@ li {
     margin-bottom: 10px;
 }
 
-
 .experiences article ul {
     max-height: 0;
     overflow: hidden;
@@ -147,7 +144,6 @@ li {
     padding-top: 10px;
 }
 
-
 .skills ul {
     list-style-type: none;
     padding-left: 0;
@@ -158,12 +154,6 @@ li {
     display: flex;
     align-items: center;
 }
-
-/* .skill-icon img {
-    width: 60px;
-    height: 60px;
-    margin-right: 10px;
-} */
 
 .skill-name {
     font-weight: bold;
@@ -211,7 +201,7 @@ li {
 
 .education-container {
     display: flex;
-    gap: 20px
+    gap: 20px;
 }
 
 .education-item {
@@ -219,7 +209,7 @@ li {
     min-width: 200px;
 }
 
-.hobbies-interests{
+.hobbies-interests {
     margin-top: -16px;
 }
 
@@ -258,6 +248,61 @@ li {
     margin-right: 0;
 }
 
-.personal-statement{
+.personal-statement {
     margin-left: -19px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .resume-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hobbies-interests ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .resume-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hobbies-interests ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .resume-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hobbies-interests ul {
+        grid-template-columns: 1fr;
+    }
 }

@@ -106,8 +106,52 @@ body {
     animation: fadeIn 1s ease-in-out forwards;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: -300px;
+    }
+
+    .project-card img {
+        height: 300px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 768px) {
     .project-container {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        margin-top: -200px;
+    }
+
+    .project-card img {
+        height: 250px;
+    }
+
+    .project-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 1rem;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+        margin-top: -100px;
+    }
+
+    .project-card img {
+        height: 200px;
+    }
+
+    .project-title {
+        font-size: 16px;
     }
 }
