@@ -17,12 +17,12 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     margin: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
 }
 
 .container {
     width: 100%;
-    min-height: 100vh; /* Allow vertical scrolling */
+    min-height: 100vh;
     overflow-y: auto;
     background-image: url('../imgs/desk3.jpg');
     background-size: cover;
@@ -39,8 +39,8 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 20px; /* Add padding to ensure content is not cut off */
-    width: 100%; /* Ensure the grid fits within the viewport */
+    padding: 20px;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -205,7 +205,7 @@ li {
 .education-container {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; /* Ensure the items wrap within the container */
+    flex-wrap: wrap;
 }
 
 .education-item {
@@ -231,7 +231,7 @@ li {
     gap: 20px;
     list-style: none;
     padding: 0;
-    width: 100%; /* Ensure the list fits within the viewport */
+    width: 100%;
 }
 
 .hobbies-interests li {
