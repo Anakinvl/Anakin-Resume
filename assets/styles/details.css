@@ -13,7 +13,7 @@ html, body {
     color: white;
     line-height: 1.6;
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 a {
@@ -30,7 +30,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Allow vertical scrolling */
     width: 100%;
     padding: 2rem;
     box-sizing: border-box;
@@ -43,13 +43,27 @@ main {
     align-items: flex-start;
     width: 100%;
     max-width: 1400px;
-    padding-bottom: 50%;
+    padding-bottom: 50px; /* Adjust padding to ensure content is not cut off */
     overflow: hidden;
-    position: absolute;
-    top: 200px;
-    left: 0;
-    margin-left: 250px;
+    position: relative; /* Change to relative to allow proper positioning */
+    top: 0; /* Adjust top to 0 */
+    margin-left: 0; /* Adjust margin to 0 */
 }
+
+.content-container-vertical {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1400px;
+    padding-bottom: 50px; /* Adjust padding to ensure content is not cut off */
+    overflow: hidden;
+    position: relative; /* Change to relative to allow proper positioning */
+    top: 0; /* Adjust top to 0 */
+    margin-left: 0; /* Adjust margin to 0 */
+}
+
 
 .description-container {
     flex: 1;
@@ -58,8 +72,6 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 100px;
 }
 
 .description-container h2 {
@@ -165,8 +177,16 @@ main {
         flex-direction: column;
         align-items: center;
         margin-left: 0;
-        top: 100px;
+        margin-top: -120px; /* Ensure proper margin */
     }
+
+    .content-container-vertical {
+         flex-direction: column;
+         align-items: center;
+         margin-left: 0;
+         /* top: 300px; */
+         margin-top: -600px;
+        }
 
     .description-container {
         position: relative;
@@ -179,6 +199,8 @@ main {
     .slideshow-container {
         width: 90%;
         height: auto;
+        top: 0; /* Ensure proper top positioning */
+        margin-bottom: 20px; /* Ensure proper margin */
     }
 
     .slide img {
@@ -187,7 +209,7 @@ main {
     }
 
     .next {
-        margin-left: 0;
+        right: 0;
     }
 
     .next-lab {
@@ -200,14 +222,21 @@ main {
         flex-direction: column-reverse;
         align-items: center;
         margin-left: 0;
-        top: 100px;
+        top: 0; /* Ensure proper top positioning */
+    }
+
+    .content-container-vertical {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-left: 0;
+        top: 400px;
     }
 
     .description-container {
         min-width: auto;
         margin-right: 0;
         margin-bottom: 20px;
-        top: 200px;
+        top: 0; /* Ensure proper top positioning */
         width: 90%;
     }
 
@@ -226,7 +255,7 @@ main {
     }
 
     .next-lab {
-        margin-left: 0;
+        margin-left: 255px;
     }
 }
 

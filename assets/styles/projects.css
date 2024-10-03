@@ -15,15 +15,15 @@ body, html {
 }
 
 .projects-body {
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow-y: auto;
 }
 
 main {
     display: flex;
     align-items: center;
     max-width: 1200px;
-    height: 100vh;
+    min-height: 100vh;
     padding: 2rem;
     margin: 0 auto;
     position: relative;
@@ -36,7 +36,7 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     animation: slideUp 1s ease-in-out forwards;
-    margin-top: -450px;
+    margin-top: -200px;
 }
 
 .project-card {
@@ -110,7 +110,7 @@ body {
 @media (max-width: 1200px) {
     .project-container {
         grid-template-columns: repeat(2, 1fr);
-        margin-top: -300px;
+        margin-top: 0px;
     }
 
     .project-card img {
@@ -125,7 +125,7 @@ body {
 @media (max-width: 768px) {
     .project-container {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        margin-top: -200px;
+        margin-top: 0px;
     }
 
     .project-card img {
@@ -144,7 +144,7 @@ body {
 
     .project-container {
         grid-template-columns: 1fr;
-        margin-top: -100px;
+        margin-top: 0px;
     }
 
     .project-card img {

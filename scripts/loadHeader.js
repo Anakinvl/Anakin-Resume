@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
             const currentPage = window.location.pathname.split('/').pop();
             const navLinks = document.querySelectorAll('nav a');
             navLinks.forEach(link => {
-                if (link.getAttribute('href') === currentPage) {
+                const linkPath = link.getAttribute('href').split('/').pop();
+                if (linkPath === currentPage) {
                     link.classList.add('active');
                 }
             });
